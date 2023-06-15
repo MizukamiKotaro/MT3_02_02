@@ -14,4 +14,5 @@ public:
 public:
 	MyVector3 normal; // 法線
 	float distance; // 距離
+	bool isLimit = false;
 };

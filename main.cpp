@@ -66,6 +66,7 @@ int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR lpCmdLine, _In
 		ImGui::SliderFloat("sphere.radius", &sphere.radius_, 0.0f, 3.0f);
 		ImGui::DragFloat3("plane.normal", &plane.normal.x, 0.01f);
 		ImGui::DragFloat("plane.distance", &plane.distance, 0.01f);
+		ImGui::Checkbox("plane.limit", &plane.isLimit);
 		ImGui::End();
 		plane.normal = Calc::Normalize(plane.normal);
 
