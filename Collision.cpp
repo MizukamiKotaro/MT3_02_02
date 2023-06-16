@@ -48,7 +48,7 @@ bool Collision::IsCollision(const Sphere& sphere, const Plane& plane) {
 			if (len <= radius) {
 				return true;
 			}
-			len = Calc::MakeLength(pos, perpendiculars[1], perpendiculars[2]);
+			len = Calc::MakeLength(pos, perpendiculars[1], perpendiculars[3]);
 			if (len <= radius) {
 				return true;
 			}
